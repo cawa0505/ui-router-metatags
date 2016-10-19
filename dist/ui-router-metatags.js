@@ -153,9 +153,9 @@ var uiroutermetatags;
             $window.prerenderReady = false;
         }
         function stateChangeSuccess(event, toState) {
-            if (!toState.metaTags) {
-                $log.debug("MetaTags - route: \"" + toState.name + "\" does not contain any metatags");
-            }
+//             if (!toState.metaTags) {
+//                 $log.debug("MetaTags - route: \"" + toState.name + "\" does not contain any metatags");
+//             }
             MetaTags.update(toState.metaTags);
         }
         function stateChangeError(event, toState, toParams, fromState, fromParams, error) {
